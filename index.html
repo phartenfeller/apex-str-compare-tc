@@ -5,7 +5,102 @@
 </head>
 
 <style>
-  currency-converter {
+  :root {
+    --u-color-1: #309fdb;
+    --u-color-1-contrast: #fff;
+    --u-color-2: #13b6cf;
+    --u-color-2-contrast: #e4f9fd;
+    --u-color-3: #2ebfbc;
+    --u-color-3-contrast: #f0fcfb;
+    --u-color-4: #3caf85;
+    --u-color-4-contrast: #f0faf6;
+    --u-color-5: #81bb5f;
+    --u-color-5-contrast: #fff;
+    --u-color-6: #ddde53;
+    --u-color-6-contrast: #2a2a08;
+    --u-color-7: #fbce4a;
+    --u-color-7-contrast: #443302;
+    --u-color-8: #ed813e;
+    --u-color-8-contrast: #fff;
+    --u-color-9: #e95b54;
+    --u-color-9-contrast: #fff;
+    --u-color-10: #e85d88;
+    --u-color-10-contrast: #fff;
+    --u-color-11: #ca589d;
+    --u-color-11-contrast: #fff;
+    --u-color-12: #854e9b;
+    --u-color-12-contrast: #f6f0f8;
+    --u-color-13: #5a68ad;
+    --u-color-13-contrast: #fff;
+    --u-color-14: #afbac5;
+    --u-color-14-contrast: #313b44;
+    --u-color-15: #6e8598;
+    --u-color-15-contrast: #fff;
+    --u-color-16: #59b2e2;
+    --u-color-16-contrast: #fff;
+    --u-color-17: #42c5d9;
+    --u-color-17-contrast: #051517;
+    --u-color-18: #58ccc9;
+    --u-color-18-contrast: #091c1c;
+    --u-color-19: #63bf9d;
+    --u-color-19-contrast: #fff;
+    --u-color-20: #9ac97f;
+    --u-color-20-contrast: #203316;
+    --u-color-21: #e4e575;
+    --u-color-21-contrast: #4c4d0e;
+    --u-color-22: #fcd86e;
+    --u-color-22-contrast: #694f02;
+    --u-color-23: #f19a65;
+    --u-color-23-contrast: #fff;
+    --u-color-24: #ed7c76;
+    --u-color-24-contrast: #fff;
+    --u-color-25: #ed7da0;
+    --u-color-25-contrast: #fff;
+    --u-color-26: #d579b1;
+    --u-color-26-contrast: #fff;
+    --u-color-27: #9d71af;
+    --u-color-27-contrast: #fff;
+    --u-color-28: #7b86bd;
+    --u-color-28-contrast: #fff;
+    --u-color-29: #bfc8d1;
+    --u-color-29-contrast: #3d4954;
+    --u-color-30: #8b9dad;
+    --u-color-30-contrast: #fff;
+    --u-color-31: #1a8bc9;
+    --u-color-31-contrast: #e6f4fc;
+    --u-color-32: #02a5be;
+    --u-color-32-contrast: #c1f6fe;
+    --u-color-33: #18b2ae;
+    --u-color-33-contrast: #d0f9f8;
+    --u-color-34: #24a475;
+    --u-color-34-contrast: #d2f5e8;
+    --u-color-35: #6aad42;
+    --u-color-35-contrast: #f6fbf3;
+    --u-color-36: #c9c93a;
+    --u-color-36-contrast: #030301;
+    --u-color-37: #d9b13c;
+    --u-color-37-contrast: #120f04;
+    --u-color-38: #d76a27;
+    --u-color-38-contrast: #fffefe;
+    --u-color-39: #d2423c;
+    --u-color-39-contrast: #fff;
+    --u-color-40: #d1436f;
+    --u-color-40-contrast: #fff;
+    --u-color-41: #ba3d88;
+    --u-color-41-contrast: #fdf9fb;
+    --u-color-42: #773492;
+    --u-color-42-contrast: #e8d5f0;
+    --u-color-43: #3c4ea3;
+    --u-color-43-contrast: #e8eaf6;
+    --u-color-44: #8c9eb0;
+    --u-color-44-contrast: #fff;
+    --u-color-45: #4d7391;
+    --u-color-45-contrast: #e9eff4;
+    /* ... Add other color definitions up to --u-color-13 ... */
+    --ut-palette-danger: red;
+  }
+
+  x-str-compare-tc {
     margin: 8px;
   }
 </style>
@@ -13,6 +108,50 @@
 <body>
   <h1>Web Component Template</h1>
   <div style="display: grid; grid-template-columns: repeat(2,minmax(0,1fr));">
-    <my-component text="Hello World"></my-component>
+
+    <div>
+      <h2>Mode: Previous line, rotate colors</h2>
+      <x-str-compare-tc compare-mode="previous-line" rotate-colors="true" separator-char="">
+        <data>Abcdef</data>
+        <data>Abcdefg</data>
+        <data>AbCdef</data>
+        <data>Abcdefg</data>
+        <data>Abcdef</data>
+        <data>Abcdef</data>
+        <data>Abcde</data>
+      </x-str-compare-tc>
+    </div>
+    <div>
+      <h2>Mode: Previous line</h2>
+      <x-str-compare-tc compare-mode="previous-line" rotate-colors="false" separator-char="">
+        <data>Abcdef</data>
+        <data>Abcdefg</data>
+        <data>AbCdef</data>
+        <data>Abcdefg</data>
+        <data>Abcdef</data>
+        <data>Abcdef</data>
+        <data>Abcde</data>
+      </x-str-compare-tc>
+    </div>
+    <div>
+      <h2>Mode: First line</h2>
+      <x-str-compare-tc compare-mode="first-line" rotate-colors="false" separator-char="">
+        <data>Abcdef</data>
+        <data>Abcdefg</data>
+        <data>AbCdef</data>
+        <data>Abcdefg</data>
+        <data>Abcdef</data>
+        <data>Abcdef</data>
+        <data>Abcde</data>
+      </x-str-compare-tc>
+    </div>
+
+    <div>
+      <h2>Mode: First line, seperator ":"</h2>
+      <x-str-compare-tc compare-mode="first-line" rotate-colors="true" separator-char=":">
+        <data>A:B:C:A</data>
+        <data>A:B:A</data>
+      </x-str-compare-tc>
+    </div>
   </div>
 </body>
