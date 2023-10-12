@@ -29,7 +29,7 @@
         "internalName": "DEV.HARTENFELLER.STRING_COMPARE",
         "type": "template component",
         "demo": "https://apex.oracle.com/pls/apex/r/hartenfeller_dev/23-1-template-components/string-comparison",
-        "previewImage": "https://raw.githubusercontent.com/phartenfeller/apex-faq-template-component/main/assets/plugin-preview.png?raw=true"
+        "previewImage": "https://github.com/phartenfeller/apex-str-compare-tc/blob/main/assets/plugin-preview.png?raw=true"
       }
     }
   }
