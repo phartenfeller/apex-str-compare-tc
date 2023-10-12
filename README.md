@@ -1,4 +1,17 @@
-# Web Components Template
+# APEX String Compare Template Component
+
+![](assets/plugin-preview.png)
+
+Compare multiple strings with each other and highlight the differences.
+
+Features
+
+- Usable as multiple and partial
+- Rotating Colors
+- Compare to previous or first line
+- Split strings by character
+
+## Development based on Web Component
 
 requirements: node.js
 

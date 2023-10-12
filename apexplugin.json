@@ -1,0 +1,36 @@
+{
+  "name": "String Multi Compare",
+  "version": "1.0",
+  "description": "Compare multiple strings and get visual feedback on differences.",
+  "keywords": ["string", "compare"],
+  "homepage": "https://github.com/phartenfeller/apex-str-compare-tc",
+  "bugs": {
+    "url": "https://github.com/phartenfeller/apex-str-compare-tc/issues",
+    "email": "hartenfeller.dev+faq-plugin@gmail.com"
+  },
+  "license": "MIT",
+  "commercial": "No",
+  "author": {
+    "name": "Philipp Hartenfeller",
+    "email": "hartenfeller.dev+contact@gmail.com",
+    "url": "https://hartenfeller.dev",
+    "twitter": "phartenfeller",
+    "donationUrl": "http://paypal.me/phartenfeller"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/phartenfeller/apex-str-compare-tc.git"
+  },
+  "oracle": {
+    "versions": ["23.2.0", "21.1.0", "19.1.0"],
+    "apex": {
+      "versions": ["23.1.0"],
+      "plugin": {
+        "internalName": "DEV.HARTENFELLER.STRING_COMPARE",
+        "type": "template component",
+        "demo": "https://apex.oracle.com/pls/apex/r/hartenfeller_dev/23-1-template-components/string-comparison",
+        "previewImage": "https://raw.githubusercontent.com/phartenfeller/apex-faq-template-component/main/assets/plugin-preview.png?raw=true"
+      }
+    }
+  }
+}
